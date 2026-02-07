@@ -25,7 +25,13 @@ body {
   padding-left: 16px;
   padding-right: 16px;
 
-  background: linear-gradient(-45deg, #0ea5b7, #38bdf8, #facc15, #fcd34d);
+  background: linear-gradient(
+    -45deg,
+    #0f172a,
+    #14532d,
+    #d97706,
+    #f5e6c8
+  );
   background-size: 400% 400%;
   animation: gradientAnimation 20s ease infinite;
 
@@ -52,7 +58,7 @@ body {
 
   background: #ffffff;
   border-radius: 2rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.35);
 
   padding: 3rem;
   text-align: center;
@@ -88,11 +94,11 @@ body {
 .qr-card {
   margin-top: 2.5rem;
 
-  background: linear-gradient(145deg, #f0f9ff, #38bdf8);
+  background: linear-gradient(145deg, #f5e6c8, #d97706);
   border-radius: 1.5rem;
-  border: 3px solid #0ea5b7;
+  border: 3px solid #14532d;
 
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.3);
   padding: 2rem;
 
   display: flex;
@@ -104,7 +110,7 @@ body {
 
 .qr-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 30px rgba(14, 165, 183, 0.5);
+  box-shadow: 0 12px 30px rgba(20, 83, 45, 0.6);
 }
 
 /* QR Canvas */
@@ -112,7 +118,7 @@ canvas {
   border-radius: 1rem;
   background-color: #ffffff;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);
 }
 
 /* Button */
@@ -127,16 +133,16 @@ canvas {
   border: none;
   cursor: pointer;
 
-  background: linear-gradient(135deg, #0ea5b7, #075985);
+  background: linear-gradient(135deg, #14532d, #0f172a);
   color: #ffffff;
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 6px 15px rgba(15, 23, 42, 0.4);
 }
 
 .cta-button:hover {
   transform: scale(1.06);
-  box-shadow: 0 8px 20px rgba(14,165,183,0.6);
+  box-shadow: 0 8px 20px rgba(20, 83, 45, 0.7);
 }
 
 /* Floating Toys */
@@ -149,7 +155,7 @@ canvas {
   background-size: contain;
   background-repeat: no-repeat;
 
-  opacity: 0.7;
+  opacity: 0.6;
   z-index: 1;
 
   animation: floatToy linear infinite;
@@ -162,7 +168,7 @@ canvas {
   }
   100% {
     transform: translateY(-50px) rotate(360deg) scale(1);
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
@@ -175,7 +181,7 @@ footer {
 }
 
 footer b {
-  color: #0ea5b7;
+  color: #14532d;
 }
 
 /* Tablet */
