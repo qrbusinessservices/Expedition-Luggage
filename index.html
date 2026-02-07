@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Expedition Luggage, 1200 St. Laurent Blvd, Ottawa – Google Review</title>
+
+  <!-- Favicon using GitHub-hosted logo -->
+  <link
+    rel="icon"
+    href="https://raw.githubusercontent.com/qrbusinessservices/"
+    type="image/png"
+  >
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating Toys -->
+  <div class="toy" style="top:90%; left:5%; animation-duration:20s;"></div>
+  <div class="toy" style="top:85%; left:15%; animation-duration:23s;"></div>
+  <div class="toy" style="top:88%; left:25%; animation-duration:21s;"></div>
+  <div class="toy" style="top:92%; left:35%; animation-duration:25s;"></div>
+  <div class="toy" style="top:87%; left:45%; animation-duration:18s;"></div>
+  <div class="toy" style="top:90%; left:55%; animation-duration:22s;"></div>
+  <div class="toy" style="top:85%; left:65%; animation-duration:24s;"></div>
+  <div class="toy" style="top:90%; left:75%; animation-duration:20s;"></div>
+  <div class="toy" style="top:88%; left:85%; animation-duration:23s;"></div>
+  <div class="toy" style="top:92%; left:95%; animation-duration:25s;"></div>
+
+  <!-- Main Card -->
+  <div class="main-card">
+
+    <!-- GitHub-hosted logo -->
+    <img
+      src="https://raw.githubusercontent.com/qrbusinessservices/"
+      alt="Expedition Luggage Logo"
+      class="animated-logo"
+    >
+<h1>Welcome to Expedition Luggage</h1>
+<p>
+  Thank you for visiting <strong>Expedition Luggage</strong>, your trusted destination for high-quality travel solutions.<br>
+  We value your feedback, as it helps us continually enhance your shopping experience.
+</p>
+
+
+    <!-- Google Review -->
+    <div class="qr-card p-6 flex flex-col items-center mt-10">
+      <div class="bg-white p-4 rounded-xl shadow-inner">
+        <canvas id="qr-google"></canvas>
+      </div>
+
+      <h2 class="mt-6 mb-2">Google Maps Review</h2>
+      <p class="text-sm text-gray-500 mb-4">
+        Share your experience directly on Google.
+      </p>
+
+      <a
+        href="https://search.google.com/local/writereview?placeid=ChIJo3OThIIPzkwRIUAsLdwKRfQ"
+        target="_blank"
+        class="cta-button"
+      >
+        Leave a Google Review
+      </a>
+    </div>
+
+    <footer class="mt-12 text-sm text-gray-400">
+      <p>© 2026 Expedition Luggage. All Rights Reserved.</p>
+      <p class="mt-1">
+        Reviewing Location:
+        <b>Expedition Luggage - 1200 St. Laurent Blvd, Ottawa, ON K1K 3B8</b>
+      </p>
+      <p class="mt-1">Concept & Design by <b>Premsingh Padya</b></p>
+      <p class="mt-2">Unauthorized reproduction or misuse is prohibited.</p>
+    </footer>
+  </div>
+
+  <!-- QR Code Library -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+
+  <script>
+    QRCode.toCanvas(
+      document.getElementById('qr-google'),
+      'https://search.google.com/local/writereview?placeid=ChIJo3OThIIPzkwRIUAsLdwKRfQ',
+      {
+        width: 180,
+        margin: 10,
+        color: {
+          dark: '#000000',
+          light: '#ffffff'
+        }
+      }
+    );
+  </script>
+
+</body>
+</html>
+
